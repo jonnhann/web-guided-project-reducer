@@ -34,12 +34,7 @@ const Title = () => {
             value={newTitleText}
             onChange={handleChanges}
           />
-          <button
-            onClick={() => {
-              setTitle(newTitleText);
-              setEditing(false);
-            }}
-          >
+          <button onClick={() => dispatch({type: "UPDATE_TITLE", payload: newTitleText})}>
             Update title
           </button>
         </div>

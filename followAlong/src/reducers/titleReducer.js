@@ -9,6 +9,6 @@ const titleReducer = (state, action) => {
     }
 }
 
-// ALWAYS start with {...state,} in your return values, to make sure that all values from the previous state object are included in the new state object.
+// ALWAYS start with {...state, } in your return values, to make sure that all values from the previous state object are included in the new state object.
 
 export default titleReducer;

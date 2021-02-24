@@ -1,6 +1,7 @@
 import React, { useState, useReducer } from 'react';
 import { TOGGLE_EDITING, UPDATE_TITLE } from '../actions/titleActions';
 import titleReducer from '../reducers/titleReducer';
+import actions from "../actions/titleActions";
 
 const Title = () => {
   // turn these two into a single useReducer call

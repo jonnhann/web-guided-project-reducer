@@ -11,5 +11,4 @@ export default {
     updateTitle: (title) => {
         return {type: UPDATE_TITLE, payload: title}
     }
-
 }

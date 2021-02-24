@@ -7,5 +7,9 @@ export const UPDATE_TITLE = "UPDATE_TITLE";
 export default {
     toggleEditing: () => {
         return { type: TOGGLE_EDITING };
+    },
+    updateTitle: (title) => {
+        return {type: UPDATE_TITLE, payload: title}
     }
+
 }

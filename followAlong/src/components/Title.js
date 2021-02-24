@@ -8,7 +8,6 @@ const Title = () => {
 
   // instead of the standalone title and editing variables, for useReducer we want to put them in a state object: {title: string, editing: boolean}
 
-
   const initialState = { title: "Hello reducer earthlings!", editing: false };
   const [state, dispatch] = useReducer(titleReducer, initialState);
 

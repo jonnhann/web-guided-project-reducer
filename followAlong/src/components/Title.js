@@ -1,4 +1,5 @@
 import React, { useState, useReducer } from 'react';
+import { TOGGLE_EDITING, UPDATE_TITLE } from '../actions/titleActions';
 import titleReducer from '../reducers/titleReducer';
 
 const Title = () => {
@@ -22,7 +23,7 @@ const Title = () => {
       {!state.editing ? (
         <h1>
           {state.title}{' '}
-          <i onClick={() => dispatch({type: "TOGGLE_EDITING"})} className="far fa-edit" />
+          <i onClick={() => dispatch({type: TOGGLE_EDITING})} className="far fa-edit" />
         </h1>
       ) : (
         <div>
@@ -33,7 +34,7 @@ const Title = () => {
             value={newTitleText}
             onChange={handleChanges}
           />
-          <button onClick={() => dispatch({type: "UPDATE_TITLE", payload: newTitleText})}>
+          <button onClick={() => dispatch({type: UPDATE_TITLE, payload: newTitleText})}>
             Update title
           </button>
         </div>

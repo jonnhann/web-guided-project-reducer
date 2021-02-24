@@ -1,4 +1,5 @@
 import React, { useState, useReducer } from 'react';
+import titleReducer from '../reducers/titleReducer';
 
 const Title = () => {
   // turn these two into a single useReducer call
@@ -7,9 +8,10 @@ const Title = () => {
 
   // instead of the standalone title and editing variables, for useReducer we want to put them in a state object: {title: string, editing: boolean}
 
-  // const [state, dispatch] = useReducer(reducer, initialState)
 
   const initialState = { title: "Hello reducer earthlings!", editing: false };
+  const [state, dispatch] = useReducer(titleReducer, initialState);
+
 
   const [newTitleText, setNewTitleText] = useState(''); // component-level state (keystroke tracking)
 

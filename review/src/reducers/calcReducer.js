@@ -17,4 +17,9 @@ export default reducer;
   
 // Actions are always in the format:
 // {type: string, payload: any}
+
+// If we're refactoring a bunch of independent functions into a reducer,
+// these names correspond like this:
+// const add = (value) => {}
+// action = {type: "ADD", payload: value}
   

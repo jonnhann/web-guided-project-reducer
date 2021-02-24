@@ -12,7 +12,6 @@ const Title = () => {
   const initialState = { title: "Hello reducer earthlings!", editing: false };
   const [state, dispatch] = useReducer(titleReducer, initialState);
 
-
   const [newTitleText, setNewTitleText] = useState(''); // component-level state (keystroke tracking)
 
   const handleChanges = e => {

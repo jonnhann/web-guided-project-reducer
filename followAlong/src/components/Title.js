@@ -3,8 +3,8 @@ import titleReducer from '../reducers/titleReducer';
 
 const Title = () => {
   // turn these two into a single useReducer call
-  const [title, setTitle] = useState('Hello earthlings!'); // application-level state
-  const [editing, setEditing] = useState(false); // application-level state
+  // const [title, setTitle] = useState('Hello earthlings!'); // application-level state
+  // const [editing, setEditing] = useState(false); // application-level state
 
   // instead of the standalone title and editing variables, for useReducer we want to put them in a state object: {title: string, editing: boolean}
 
@@ -20,9 +20,9 @@ const Title = () => {
 
   return (
     <div>
-      {!editing ? (
+      {!state.editing ? (
         <h1>
-          {title}{' '}
+          {state.title}{' '}
           <i onClick={() => setEditing(!editing)} className="far fa-edit" />
         </h1>
       ) : (

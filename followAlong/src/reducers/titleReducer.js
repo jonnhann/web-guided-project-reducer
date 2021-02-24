@@ -3,7 +3,7 @@ const titleReducer = (state, action) => {
         case "TOGGLE_EDITING":
             return { ...state, editing: !state.editing };
         case "UPDATE_TITLE":
-            return { ...state, title: action.payload };
+            return { ...state, title: action.payload, editing: false };
         default:
             return state;
     }

@@ -13,5 +13,8 @@ const reducer = (state, action) => {
     }
   };
   
-  export default reducer;
+export default reducer;
+  
+// Actions are always in the format:
+// {type: string, payload: any}
   

@@ -12,6 +12,10 @@ export default function App() {
   };
 
   const [state, dispatch] = useReducer(reducer, initialState);
+  // just like [value, setValue] = useState(initialValue);
+
+  // We communicate with the reducer in this way:
+  // dispatch(action)
 
   const handleAdd = () => {
     dispatch(actions.addAction(2));

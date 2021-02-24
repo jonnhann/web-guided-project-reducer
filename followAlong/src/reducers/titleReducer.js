@@ -3,8 +3,10 @@ import { TOGGLE_EDITING, UPDATE_TITLE } from "../actions/titleActions";
 const titleReducer = (state, action) => {
     switch (action.type) {
         case TOGGLE_EDITING:
+            console.log("toggle editing action called in the reducer")
             return { ...state, editing: !state.editing };
         case UPDATE_TITLE:
+            console.log("update title action called in the reducer")
             return { ...state, title: action.payload, editing: false };
         default:
             return state;
